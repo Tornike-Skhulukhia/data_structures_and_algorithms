@@ -55,17 +55,17 @@ def sort_it(array, v=True):
 # array = [3, 12, 6, 123, 2] 
 for i in range(10):
 
-    array = random.sample(range(1000), 100)
+    array = random.sample(range(1000000), 1000)
 
-    print("Initial array: ", array, "\n", "="*80, sep="")
+    # print("Initial array: ", array, "\n", "="*80, sep="")
     # measure time
-    time.sleep(1)
+    time.sleep(0.1)
     t_1 = time.time()
     result = sort_it(array, v=False)
     diff_1 = time.time() - t_1
-    print("="*80, "\nresult:", result)
+    # print("="*80, "\nresult:", result)
 
-    time.sleep(1)
+    time.sleep(0.1)
     t_2 = time.time()
     python_sorted = sorted(array)
     diff_2 = time.time() - t_2
